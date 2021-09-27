@@ -4,12 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <title>Calculadora Porcentagem</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <h1>Calculadora de Porcentagem</h1>
 
-<script src="js/script.js"></script>
+  <header>
+      <div class="container">
+          <h2>Escolha abaixo qual porcentagem quer calcular.</h2>
+          <div class="choose-calc">
+              <select name="choose-model" id="choose-model">
+                  <option value="1">Calculadora de Porcentagem 1</option>
+                  <option value="2">Calculadora de Porcentagem 2</option>
+                  <option value="3">Calculadora de Porcentagem 3</option>
+              </select>
+              <button class="check-select">Ver</button>
+          </div>
+      </div>
+  </header>
+  <main>
+    <div class="area-percent1">
+        <div class="percent-area1">
+            <label for="percent">Quero saber quanto é:
+                <input type="tel" autocomplete="off" name="" id="percent" placeholder="percentual"title="Digite o número percentual"> %
+            </label><br />
+            <label for="value-percent">de:
+                <input type="tel" autocomplete="off" name="" id="value-percent" placeholder="valor" title="Digite o número">
+            </label><br/>
+            
+            <div class="buttons-area">
+                <button class="btn-calc">Calcular</button>
+                <button class="btn-clear">Limpar dados</button>
+            </div>
+
+            <div class="result-area">
+                <span>Resultado</span>
+                <div class="result">--</div>
+            </div>
+        </div>
+    </div>
+
+    <!--AREA 2-->
+    <div class="area-percent2">
+        <div class="percent-area1">
+            <label for="percent">Tenho um valor de:
+                <input type="tel" autocomplete="off" name="" id="percent2" placeholder="valor"title="Digite o valor">
+            </label><br />
+            <label for="value-percent">Quero saber qual sua porcentagem em cima do valor de:
+                <input type="tel" autocomplete="off" name="" id="value-percent2" placeholder="valor" title="Digite o número">
+            </label><br/>
+            
+            <div class="buttons-area">
+                <button class="btn-calc2">Calcular</button>
+                <button class="btn-clear2">Limpar dados</button>
+            </div>
+
+            <div class="result-area">
+                <span>Resultado</span>
+                <div class="result2">--</div>
+            </div>
+        </div>
+    </div>
+
+  </main>
+  <footer>
+      &copy; Desenvolvido por MarcoLucianoDev
+  </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

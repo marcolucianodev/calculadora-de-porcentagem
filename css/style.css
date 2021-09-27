@@ -1,0 +1,157 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+h1 {
+    margin-top: 20px;
+    color: #466868;
+    text-shadow: 1px 1px 2px #000;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 3% 2% 0%;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.choose-calc {
+    display: flex;
+}
+
+select#choose-model {
+    width: 80%;
+    padding: 10px;
+    font-size: 17px;
+    outline-color: #466868;
+    border-color: #466868;
+    background: none;
+}
+
+.check-select {
+    width: 18%;
+    margin-left:10px;
+    background-color: #466868;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 3% 2%;
+    margin: 0 auto;
+}
+
+.area-percent1,
+.area-percent2 {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    box-shadow: 5px 5px 10px rgba(70, 104, 104, 0.8);
+}
+
+.area-percent2 {
+    display: none;
+}
+
+.percent-area1,
+.percent-area2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.percent-area1 label,
+.percent-area2 label {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.percent-area1 input,
+.percent-area2 input {
+    padding: 10px;
+    font-size: 17px;
+    outline-color: #466868;
+}
+
+.buttons-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-calc,
+.btn-calc2 {
+    margin-right: 30px;
+}
+
+.btn-calc, 
+.btn-clear,
+.btn-calc2, 
+.btn-clear2 {
+    padding: 10px 20px;
+    width: 40%;
+    background-color: #466868;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.result-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.result-area span {
+    margin-bottom: 10px;
+}
+
+.result,
+.result2 {
+    width: 50%;
+    border: 2px solid #466868;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 17px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
