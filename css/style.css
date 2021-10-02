@@ -176,12 +176,15 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width:554px) {
     .percent-area1 label, .percent-area2 label {
         text-align: center;
         display: flex;
         flex-direction: column;
     }
+}
+
+@media (max-width: 480px) {
 
     .buttons-area {
         flex-direction: column;
