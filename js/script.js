@@ -47,3 +47,18 @@ buttonClear2.addEventListener('click', function(){
     let clearPercent = document.querySelector('#percent2').value = ""
     let clearValuePercent = document.querySelector('#value-percent2').value = ""
 })
+
+function onlynumber(evt) {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode( key );
+    //var regex = /^[0-9.,]+$/;
+    var regex = /^[0-9.]+$/;
+    if( !regex.test(key) ) {
+       theEvent.returnValue = false;
+       alert('Somente números é permitido!')
+       if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+ }
+
+ 
