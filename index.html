@@ -7,6 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c296bc828.js" crossorigin="anonymous"></script>
+
     <title>Calculadora Porcentagem</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,23 +27,23 @@
                   <option value="2">Calculadora de Porcentagem 2</option>
                   <!--<option value="3">Calculadora de Porcentagem 3</option>-->
               </select>
-              <button class="check-select">Ver</button>
+              <button class="check-select">Selecionar</button>
           </div>
       </div>
   </header>
   <main>
     <div class="area-percent1">
         <div class="percent-area1">
-            <label for="percent">Quero saber quanto é:
+            <label for="percent">Quero saber quanto é:<br/>
                 <input type="tel" autocomplete="off" name="" id="percent" placeholder="percentual"title="Digite o número percentual" onkeypress="return onlynumber();"> %
             </label><br />
-            <label for="value-percent">de:
+            <label for="value-percent">de:<br />
                 <input type="tel" autocomplete="off" name="" id="value-percent" placeholder="valor" title="Digite o número" onkeypress="return onlynumber();">
             </label><br/>
             
             <div class="buttons-area">
-                <button class="btn-calc">Calcular</button>
-                <button class="btn-clear">Limpar dados</button>
+                <button class="btn-calc"><i class="fa fa-calculator"></i>Calcular</button>
+                <button class="btn-clear"><i class="fa fa-trash"></i>Limpar dados</button>
             </div>
 
             <div class="result-area">
@@ -51,16 +56,16 @@
     <!--AREA 2-->
     <div class="area-percent2">
         <div class="percent-area1">
-            <label for="percent">Tenho um valor de:
+            <label for="percent">Tenho um valor de:<br/>
                 <input type="tel" autocomplete="off" name="" id="percent2" placeholder="valor"title="Digite o valor" onkeypress="return onlynumber();">
             </label><br />
-            <label for="value-percent">Quero saber qual sua porcentagem em cima do valor de:
+            <label for="value-percent">Quero saber qual sua porcentagem em cima do valor de:<br/>
                 <input type="tel" autocomplete="off" name="" id="value-percent2" placeholder="valor" title="Digite o número" onkeypress="return onlynumber();">
             </label><br/>
             
             <div class="buttons-area">
-                <button class="btn-calc2">Calcular</button>
-                <button class="btn-clear2">Limpar dados</button>
+                <button class="btn-calc2"><i class="fa fa-calculator"></i>Calcular</button>
+                <button class="btn-clear2"><i class="fa fa-trash"></i>Limpar dados</button>
             </div>
 
             <div class="result-area">
@@ -72,7 +77,11 @@
 
   </main>
   <footer>
-      &copy; Desenvolvido por MarcoLucianoDev
+        <p>&copy; Desenvolvido por MarcoLucianoDev</p>
+        <p class="social-icon">
+            <a href="https://www.linkedin.com/in/marcolucianodev/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/marcolucianodev" target="_blank"><i class="fa fa-github"></i></a>
+        </p>
   </footer>
 
     <script src="js/script.js"></script>
