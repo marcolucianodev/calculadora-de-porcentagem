@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    outline: none;
 }
 
 :root {
@@ -16,6 +15,10 @@ body {
     height: 100vh;
     min-height: 500px;
     padding: 3%;
+}
+
+button {
+    outline: none;
 }
 
 h1 {
