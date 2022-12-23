@@ -20,13 +20,13 @@ buttonCalc.addEventListener('click', function(){
     let percent = Number(n1.value)
     let valuePercent = Number(n2.value)
     let $calc = (percent / 100) * valuePercent
-    let result = document.querySelector('.result').innerHTML = $calc.toFixed(2)
+    document.querySelector('.result').innerHTML = $calc.toFixed(2)
 })
 
 buttonClear.addEventListener('click', function(){
-    let result = document.querySelector('.result').innerHTML = "--"
-    let clearPercent = document.querySelector('#percent').value = ""
-    let clearValuePercent = document.querySelector('#value-percent').value = ""
+    document.querySelector('.result').innerHTML = "--"
+    document.querySelector('#percent').value = ""
+    document.querySelector('#value-percent').value = ""
 })
 
 //AREA 2
@@ -39,13 +39,13 @@ buttonCalc2.addEventListener('click', function(){
     let percent = Number(n1.value)
     let valuePercent = Number(n2.value)
     let $calc = (percent * 100) / valuePercent
-    let result = document.querySelector('.result2').innerHTML = $calc.toFixed(2) + ' %'
+    document.querySelector('.result2').innerHTML = $calc.toFixed(2) + ' %'
 })
 
 buttonClear2.addEventListener('click', function(){
-    let result = document.querySelector('.result2').innerHTML = "--"
-    let clearPercent = document.querySelector('#percent2').value = ""
-    let clearValuePercent = document.querySelector('#value-percent2').value = ""
+    document.querySelector('.result2').innerHTML = "--"
+    document.querySelector('#percent2').value = ""
+    document.querySelector('#value-percent2').value = ""
 })
 
 function onlynumber(evt) {
