@@ -51,10 +51,15 @@ header {
 
 .choose-calc {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    gap: 10px;
+    max-width: 350px;
 }
 
 select#choose-model {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     font-size: 17px;
     outline-color: #584196;
@@ -69,14 +74,14 @@ option {
 }
 
 .check-select {
-    width: auto;
-    margin-left:10px;
+    width: 100%;
     background-color: #584196;
     color: #fff;
     font-size: 17px;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 main {
@@ -92,11 +97,13 @@ main {
     background-color: #302f48;
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 15px;
     box-shadow: 0px 1px 20px 0px rgba(16, 14, 23, 0.8);
     border-radius: 10px;
     color: #dddbe9;
     text-align: center;
+    width: 100%;
+    max-width: 350px;
 }
 
 .area-percent2 {
@@ -135,6 +142,8 @@ input#value-percent2 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    width: 100%;
+    gap: 10px;
 }
 
 i.fa.fa-calculator,
@@ -143,21 +152,19 @@ i.fa.fa-trash {
     margin-right: 10px;
 }
 
-.btn-calc,
-.btn-calc2 {
-    margin-right: 30px;
-}
-
 .btn-calc, 
 .btn-calc2 {
     padding: 10px 20px;
-    width: auto;
+    width: max-content;
     background-color: #027cff;
     border: none;
     border-radius: 20px;
     color: #dddbe9;
     font-size: 15px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .btn-clear, 
@@ -170,6 +177,7 @@ i.fa.fa-trash {
     color: #dddbe9;
     font-size: 15px;
     display: flex;
+    cursor: pointer;
 }
 
 .result-area {
